@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee table</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Employee List : {{name}}</h1>
+    <table id="emp_table">
+  <tr>
+    <th>Employee_id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone no</th>
+    <th>Designation</th>
+    <th>Joining_date</th>
+    <th>Address</th>
+    <th>dob</th>
+    
+  </tr>
+  {% for emp in employees_key %}
+  <tr>
+    <td>{{emp.employee_id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.email}}</td>
+    <td>{{emp.phone}}</td>
+    <td>{{emp.designation}}</td>
+    <td>{{emp.joining_date}}</td>
+    <td>{{emp.address}}</td>
+    <td>{{emp.dob}}</td>
+  </tr>
+  {% endfor %}
+
+    </table>
+
+
+</body>
+</html>
