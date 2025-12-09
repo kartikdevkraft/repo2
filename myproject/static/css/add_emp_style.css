@@ -1,0 +1,27 @@
+#add-emp-form{
+    border : 1px solid grey;
+    display :flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items:center;
+    background-color: aliceblue;
+}
+#add-emp-form div{
+    margin-bottom:2px;
+}
+
+/* Style the generic error message */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* 🟥 Target the input field with the error class 🟥 */
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+    border: 2px solid red; /* Highlight the border */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Optional: add a subtle glow */
+}

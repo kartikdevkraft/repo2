@@ -5,8 +5,41 @@
 
 #emp_table tr th,td{
     border: 1px solid rgb(20, 20, 20);
-    padding :8px;
+    padding :6px;
     text-align: center;
     
 
+}
+
+#add-emp {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    border : 1px solid grey;
+    background-color: rgb(162, 230, 230);
+    padding : 1px 6px;
+    border-radius: 2px;
+}
+
+#edit-emp {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    border : 1px solid grey;
+    padding : 1px 6px;
+    border-radius: 2px;
+    background-color: rgb(161, 240, 161);
+}
+
+#del-emp {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    border : 1px solid grey;
+    padding : 1px 6px;
+    border-radius: 2px;
+    background-color: rgb(226, 113, 105);
 }

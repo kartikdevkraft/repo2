@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Employee List : {{name}}</h1>
+    <a href="addemp/" id="add-emp">Add New Employee</a>
     <table id="emp_table">
   <tr>
     <th>Employee_id</th>
@@ -18,7 +19,8 @@
     <th>Designation</th>
     <th>Joining_date</th>
     <th>Address</th>
-    <th>dob</th>
+    <th>DOB</th>
+    <th>Action</th>
     
   </tr>
   {% for emp in employees_key %}
@@ -31,6 +33,10 @@
     <td>{{emp.joining_date}}</td>
     <td>{{emp.address}}</td>
     <td>{{emp.dob}}</td>
+    <td>
+      <a href="editemp/{{emp.id}}" id='edit-emp' >Edit</a>
+      <a href="delete/{{emp.id}}" id='del-emp' >Delete</a>
+    </td>
   </tr>
   {% endfor %}
 

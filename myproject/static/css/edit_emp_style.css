@@ -1,0 +1,11 @@
+#edit-emp-form{
+    border : 1px solid grey;
+    display :flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items:center;
+    background-color: aliceblue;
+}
+#edit-emp-form div{
+    margin-bottom:2px;
+}
