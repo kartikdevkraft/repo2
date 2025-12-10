@@ -1,0 +1,10 @@
+#edit-student-form{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    border: 2px solid grey;
+}
+#edit-student-form input{
+    margin-bottom: 2px;
+}

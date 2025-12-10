@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit student Data</title>
+    <link rel="stylesheet" href="{% static 'student/css/editstudent.css' %}">
+</head>
+<body>
+    <h1>Edit Student</h1>
+
+    <a href="/student/">Go back to Student table</a><br>
+
+    <form method="POST" id="edit-student-form" action="/student/update/{{student.id}}/" novalidate>
+    {% csrf_token %}
+
+    <h2>Student Information Form</h2>
+    
+    <div>
+        <label for="student_id">Student ID (Integer):</label><br>
+        <input type="number" id="student_id" name="student_id" value="{{student.student_id}}" required>
+    </div>
+
+    <div>
+        <label for="name">Name (Max 255 chars):</label><br>
+        <input type="text" id="name" name="name" maxlength="255" value="{{student.name}}" required>
+    </div>
+
+    <div>
+        <label for="standard">Standard:</label><br>
+        <input type="text" id="standard" name="standard" value="{{student.standard}}" required>
+    </div>
+
+    <div>
+        <label for="phone">Phone (Max 10 chars):</label><br>
+        <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" value="{{student.phone}}" required>
+    </div>
+
+    <div>
+        <label for="house_select">Designation:</label><br>
+        <select id="house_select" name="school_house" required>
+        <option value="" disabled selected>Select School House</option>
+        {% for value, label in house_choices %}
+        <option value="{{ value }}" {% if value == student.school_house %} selected {% endif %}>{{ label }}</option>
+        {% endfor %}
+            </select>
+    </div>
+
+    <div>
+        <label for="admission_date">Joining Date:</label><br>
+        <input type="date" id="admission_date" name="admission_date" value ="{{student.admission_date | date:'Y-m-d'}}" required>
+    </div>
+
+    <div>
+        <label for="dob">Date of Birth (Optional):</label><br>
+        <input type="date" id="dob" name="dob" value ="{{student.dob | date:'Y-m-d'}}">
+    </div>
+
+    <div>
+        <label for="address">Address (Optional):</label><br>
+        <textarea id="address" name="address" rows="4" >{{student.address}}</textarea>
+    </div>
+    
+    <br>
+    
+    <div>
+        <button type="submit">Submit Student Data</button>
+    </div>
+</form>
+</body>
+</html>

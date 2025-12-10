@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{% static 'student/css/add_student.css' %}">
+</head>
+<body>
+    <h1>Add Student</h1>
+
+    <a href="/student/">Go back to Student table</a><br>
+
+    <form method="POST" id="add-student-form" action="/student/addition/" novalidate>
+    {% csrf_token %}
+
+    <h2>Student Information Form</h2>
+    
+    <div>
+        <label for="student_id">Student ID (Integer):</label><br>
+        <input type="number" id="student_id" name="student_id" value="{{form.student_id.value}}" required>
+        {% if form.student_id.errors %}
+        <p class="error-message">{{ form.student_id.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="name">Name (Max 255 chars):</label><br>
+        <input type="text" id="name" name="name" maxlength="255" value='{{form.name.value}}' required>
+        {% if form.name.errors %}
+        <p class="error-message">{{ form.name.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="standard">Standard:</label><br>
+        <input type="text" id="standard" name="standard" value="{{form.standard.value}}" required>
+        {% if form.standard.errors %}
+        <p class="error-message">{{ form.standard.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="phone">Phone (Max 10 chars):</label><br>
+        <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" value="{{form.phone.value}}" required>
+        {% if form.phone.errors %}
+        <p class="error-message">{{ form.phone.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="house_select">School House:</label><br>
+        <select id="house_select" name="school_house" required>
+        <option value="" disabled selected>Select School House</option>
+        {% for value, label in house_choices %}
+        <option value="{{ value }}" {% if value == form.school_house.value %} selected {% endif %}>{{ label }}</option>
+        {% endfor %}
+            </select>
+        {% if form.school_house.errors %}
+        <p class="error-message">{{ form.school_house.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="admission_date">Joining Date:</label><br>
+        <input type="date" id="admission_date" name="admission_date" value="{{form.admission_date.value}}" required>
+        {% if form.admission_date.errors %}
+        <p class="error-message">{{ form.admission.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label for="dob">Date of Birth (Optional):</label><br>
+        <input type="date" id="dob" name="dob" value ="{{form.dob.value}}">
+    </div>
+
+    <div>
+        <label for="address">Address (Optional):</label><br>
+        <textarea id="address" name="address" rows="4">{{form.address.value}}</textarea>
+    </div>
+    
+    <br>
+    
+    <div>
+        <button type="submit">Submit Student Data</button>
+    </div>
+</form>
+</body>
+</html>

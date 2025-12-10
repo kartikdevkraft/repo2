@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student home page</title>
+    <link rel="stylesheet" href="{% static 'student/css/home.css' %}">
+</head>
+<body>
+    <h1>Student table</h1>
+
+    <a href="addstudent/" id="add-student">Add New Student</a><br><br>
+    
+    <table id="student_table">
+  <tr>
+    <th>Student_id</th>
+    <th>Name</th>
+    <th>Standard</th>
+    <th>Phone no</th>
+    <th>School House</th>
+    <th>Admission_date</th>
+    <th>Address</th>
+    <th>DOB</th>
+    <th>Action</th>
+    
+  </tr>
+  {% for st in student_key %}
+  <tr>
+    <td>{{st.student_id}}</td>
+    <td>{{st.name}}</td>
+    <td>{{st.standard}}</td>
+    <td>{{st.phone}}</td>
+    <td>{{st.school_house}}</td>
+    <td>{{st.admission_date}}</td>
+    <td>{{st.address}}</td>
+    <td>{{st.dob}}</td>
+    <td>
+      <a href="editstudent/{{st.id}}" id='edit-student' >Edit</a>
+      <a href="delete/{{st.id}}" id='del-student' >Delete</a>
+    </td>
+  </tr>
+  {% endfor %}
+
+    </table>
+</body>
+</html>
