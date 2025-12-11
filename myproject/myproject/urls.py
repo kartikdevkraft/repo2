@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from app1.views import employee_list,edit_emp,add_emp,home,update_emp,delete_emp,addition
+from app1.views import *
+from student.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +28,8 @@ urlpatterns = [
     path('employee/delete/<int:id>/', delete_emp),
     path('employee/addition/', addition),
     path('',home),
-    path('student/', include('student.urls'))
+    path('student/', include('student.urls')),
+    
+    path('sign-in/', custom_login_view, name='login'),      
+    path('sign-out/', custom_logout_view, name='logout'),
 ]
