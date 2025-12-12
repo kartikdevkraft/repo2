@@ -1,0 +1,445 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$2HSj7vhwBS5HNs54n722Ka$b/a98TKIFTy4tpTRzuk9fWHYVAgfx6mzPjknImIiKFc=",
+    "last_login": "2025-12-11T10:07:39.378Z",
+    "is_superuser": true,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "user1@hotmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-08T10:09:24.452Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 1,
+  "fields": {
+    "employee_id": 1,
+    "name": "emp1",
+    "email": "emp1@hotmail.com",
+    "phone": "3781788778",
+    "designation": "QA Engineer",
+    "joining_date": "2025-12-08",
+    "dob": "2025-04-15",
+    "address": "delhi"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 2,
+  "fields": {
+    "employee_id": 2,
+    "name": "emp2",
+    "email": "emp2@hotmail.com",
+    "phone": "1122334455",
+    "designation": "pdev",
+    "joining_date": "2025-12-01",
+    "dob": "2025-12-02",
+    "address": "bhutan"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 3,
+  "fields": {
+    "employee_id": 3,
+    "name": "user3",
+    "email": "user3@hotmail.com",
+    "phone": "2222233333",
+    "designation": "jdev",
+    "joining_date": "2025-12-08",
+    "dob": "2025-12-08",
+    "address": "jabalpur"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 4,
+  "fields": {
+    "employee_id": 4,
+    "name": "emp4",
+    "email": "emp4@hotmail.com",
+    "phone": "8374928787",
+    "designation": "Software Engineer",
+    "joining_date": "2025-12-25",
+    "dob": "2025-12-07",
+    "address": "ladakh"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 5,
+  "fields": {
+    "employee_id": 5,
+    "name": "emp5",
+    "email": "emp5@gmail.com",
+    "phone": "8888844444",
+    "designation": "Software Engineer",
+    "joining_date": "2022-10-20",
+    "dob": "2000-08-08",
+    "address": "Delhi"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 6,
+  "fields": {
+    "employee_id": 6,
+    "name": "emp6",
+    "email": "emp6@hotmail.com",
+    "phone": "1122222299",
+    "designation": "cdev",
+    "joining_date": "2023-01-18",
+    "dob": "1995-06-01",
+    "address": "kolkata"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 7,
+  "fields": {
+    "employee_id": 7,
+    "name": "emp7",
+    "email": "emp7@hotmail.com",
+    "phone": "5555599999",
+    "designation": "HR",
+    "joining_date": "2025-08-16",
+    "dob": "2001-05-29",
+    "address": "vizag"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 8,
+  "fields": {
+    "employee_id": 8,
+    "name": "emp8",
+    "email": "emp8@hotmail.com",
+    "phone": "9996664433",
+    "designation": "jdev",
+    "joining_date": "2023-11-17",
+    "dob": "2002-02-28",
+    "address": "assam"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 9,
+  "fields": {
+    "employee_id": 9,
+    "name": "emp9",
+    "email": "emp9@hotmail.com",
+    "phone": "7777777722",
+    "designation": "QA Engineer",
+    "joining_date": "2022-04-20",
+    "dob": "1998-03-08",
+    "address": "kashmir"
+  }
+},
+{
+  "model": "app1.employee",
+  "pk": 13,
+  "fields": {
+    "employee_id": 10,
+    "name": "emp10",
+    "email": "emp10@hotmail.com",
+    "phone": "1111199999",
+    "designation": "Software Engineer",
+    "joining_date": "2025-12-25",
+    "dob": "2025-12-18",
+    "address": "kashmir"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 1,
+  "fields": {
+    "student_id": 1,
+    "name": "johnny",
+    "standard": "6th",
+    "phone": "1122889977",
+    "school_house": "Yellow",
+    "admission_date": "2025-07-24",
+    "dob": "2024-11-19",
+    "address": "miami"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 4,
+  "fields": {
+    "student_id": 2,
+    "name": "mobii",
+    "standard": "9th",
+    "phone": "3377112233",
+    "school_house": "Red",
+    "admission_date": "2025-12-26",
+    "dob": "2010-08-12",
+    "address": "new Jersey"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 5,
+  "fields": {
+    "student_id": 3,
+    "name": "konan",
+    "standard": "2nd",
+    "phone": "7777444410",
+    "school_house": "Blue",
+    "admission_date": "2024-10-03",
+    "dob": "2016-12-12",
+    "address": "Austin"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 6,
+  "fields": {
+    "student_id": 5,
+    "name": "richard",
+    "standard": "10th",
+    "phone": "2233998844",
+    "school_house": "Green",
+    "admission_date": "2025-12-06",
+    "dob": "2010-12-12",
+    "address": "chicago"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 7,
+  "fields": {
+    "student_id": 6,
+    "name": "liam",
+    "standard": "8th",
+    "phone": "9999999999",
+    "school_house": "Yellow",
+    "admission_date": "2025-12-12",
+    "dob": "2015-12-28",
+    "address": "texas"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-12-08T10:21:32.494Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "1",
+    "object_repr": "Employee object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-12-08T10:51:38.445Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "2",
+    "object_repr": "Employee object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-12-08T11:27:55.473Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "3",
+    "object_repr": "Employee object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-12-08T11:29:26.260Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "4",
+    "object_repr": "Employee object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-12-08T11:31:00.153Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "5",
+    "object_repr": "Employee object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-12-08T11:33:20.784Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "6",
+    "object_repr": "Employee object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-12-08T11:34:47.100Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "7",
+    "object_repr": "Employee object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-12-08T11:35:53.763Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "8",
+    "object_repr": "Employee object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-12-08T11:41:34.492Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "9",
+    "object_repr": "Employee object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-12-08T11:42:52.127Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "app1",
+      "employee"
+    ],
+    "object_id": "10",
+    "object_repr": "Employee object (10)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-12-10T05:42:26.771Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "student",
+      "student"
+    ],
+    "object_id": "1",
+    "object_repr": "Student object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-12-10T05:44:26.956Z",
+    "user": [
+      "user1"
+    ],
+    "content_type": [
+      "student",
+      "student"
+    ],
+    "object_id": "2",
+    "object_repr": "Student object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
